@@ -1,4 +1,5 @@
-﻿using Demo.Static;
+﻿using Demo.Sealed;
+using Demo.Static;
 using OOP05.Casting_Operaotr;
 using OOP05.Operaot_Overloading;
 using static System.Net.Mime.MediaTypeNames;
@@ -7,6 +8,10 @@ namespace OOP05
 {
 	internal class Program
 	{
+		public static void print(paymentProcessor payment, double amount)
+		{
+			Console.WriteLine($"amount ={amount * 20}");
+		}
 		static void Main(string[] args)
 		{
 			#region Operaot Overloading
